@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -476,6 +476,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6634767261202047139, guid: e55799a5dccab2247afff5d76d3c25fe,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9b262ac63983fd942bb22277d552650c, type: 2}
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
       propertyPath: m_RootOrder
@@ -499,22 +504,22 @@ PrefabInstance:
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.13864416
       objectReference: {fileID: 0}
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.99034226
       objectReference: {fileID: 0}
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
@@ -524,7 +529,7 @@ PrefabInstance:
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 164.061
       objectReference: {fileID: 0}
     - target: {fileID: 6634767261208940363, guid: e55799a5dccab2247afff5d76d3c25fe,
         type: 3}
