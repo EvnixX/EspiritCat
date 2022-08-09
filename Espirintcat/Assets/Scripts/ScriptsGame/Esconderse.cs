@@ -22,6 +22,7 @@ public class Esconderse : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         playerT = Player.GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
@@ -31,11 +32,13 @@ public class Esconderse : MonoBehaviour
         {
             playerT.position = Vector3.Lerp(playerT.position, dentro.position, tiempo * Time.deltaTime);
             playerT.rotation = Quaternion.Lerp(playerT.rotation, dentro.rotation, tiempo * Time.deltaTime);
+           
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 entra = false;
                 sale = true;
+                
             }
         }
 

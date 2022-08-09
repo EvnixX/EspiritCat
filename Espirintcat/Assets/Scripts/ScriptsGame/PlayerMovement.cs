@@ -12,14 +12,16 @@ public class PlayerMovement : MonoBehaviour
     AudioSource m_AudioSource;
     Vector3 m_Movement;
     Quaternion m_Rotation = Quaternion.identity;
-    
+    public bool isHide;
 
-   
+    public static PlayerMovement instance;
+
     void Start()
     {
         m_Animator = GetComponent<Animator>();
         m_Rigidbody = GetComponent<Rigidbody>();
         m_AudioSource = GetComponent<AudioSource>();
+        isHide = false;
     }
 
    
@@ -58,5 +60,21 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
         m_Rigidbody.MoveRotation(m_Rotation);
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Spot")
+        {
+            isHide = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Spot")
+        {
+            isHide = false;
+        }
     }
 }

@@ -20,7 +20,7 @@ public class Raycast : MonoBehaviour
         {
            if(hit.collider.GetComponent<Esconderse>() == true)
             {
-                if(Input.GetKeyDown(KeyCode.Space))
+                if(Input.GetKeyDown(KeyCode.E))
                 {
                     hit.collider.GetComponent<Esconderse>().entra = true;
                 }
