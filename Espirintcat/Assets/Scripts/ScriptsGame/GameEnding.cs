@@ -61,11 +61,11 @@ public class GameEnding : MonoBehaviour
         {
             if (doRestart)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene("MainScene");
             }
             else
             {
-                Application.Quit();
+                SceneManager.LoadScene("Menu");
             }
         }
 
